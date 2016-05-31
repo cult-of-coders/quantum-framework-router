@@ -16,7 +16,7 @@ var plugin = class extends Quantum.Model.Plugin {
         let routeConfig = _.clone(atom.config);
 
         if (routeConfig.allowedRoles && routeConfig.allowedRoles.length) {
-            routeConfig.triggersEnter.push(roleChecker(routeConfig.allowedRoles));
+            routeConfig.triggersEnter = _.union(routeConfig.triggersEnter, roleChecker(routeConfig.allowedRoles));
         }
 
         let layoutTemplate = routeConfig.layout || this.config('layoutTemplate');

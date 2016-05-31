@@ -1,6 +1,6 @@
 Package.describe({
     name: 'cultofcoders:quantum-framework-router',
-    version: '1.0.0',
+    version: '1.0.1',
     // Brief, one-line summary of the package.
     summary: 'Based on Flow Router, this plugin allows you to easily create routes within Quantum Framework',
     // URL to the Git repository containing the source code for this package.
