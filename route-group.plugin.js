@@ -22,8 +22,6 @@ var plugin = class extends Quantum.Model.Plugin {
 
             mergeRoute(routeConfig, config);
 
-            console.log(newPath, routeConfig);
-
             QF.add('route', newPath, routeConfig);
         });
 

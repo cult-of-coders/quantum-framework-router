@@ -62,7 +62,8 @@ var plugin = class extends Quantum.Model.Plugin {
             'notAuthorizedTemplate': {type: String, optional: true},
             'notFoundTemplate': {type: String, optional: true}
         }
-    }
+
+  }
 };
 
 Quantum.instance.plugin('route', plugin);

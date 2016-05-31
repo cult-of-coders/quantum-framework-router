@@ -3,7 +3,7 @@ Template.registerHelper('onRoute', function(route) {
 });
 
 Template.registerHelper('pathFor', function(pathDef, kw) {
-    let params = kw.hash;
+    let params = kw ? kw.hash : {};
 
     return FlowRouter.path(pathDef, params);
 });
